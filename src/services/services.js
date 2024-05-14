@@ -1,6 +1,6 @@
 import product from './product';
 import users from './users';
-import vendor from './vendor'
+import dashboard from './dashboard'
 import response from './response'
 import config from './config'
 import auth from './auth'
@@ -8,7 +8,7 @@ import auth from './auth'
 export const services = {
   product,
   users,
-  vendor,
+  dashboard,
   response,
   config,
   auth

@@ -39,6 +39,15 @@
               </span>
             </span>
           </template>
+          <template v-else-if="field === 'vendorName'">
+            <span class="flex items-center gap-3">
+              <img :src="data.profile_photo_url" class="w-8 h-8 rounded-full object-fit object-top" />
+              <span class="font-semibold break-all text-md flex flex-col whitespace-wrap">
+                <span class="font-semibold capitalize">{{ data.fullname }}</span>
+                <span class="text-xs text-gray-400">{{ `Vendor ${data.id}` }}</span>
+              </span>
+            </span>
+          </template>
           <template v-else-if="field === 'product_price'">
             <span>
               {{ $currencyFormat(data.price) }}

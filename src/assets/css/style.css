@@ -32,7 +32,7 @@
 /* INPUT  */
 .input-field {
     border-width: 1px;
-    border-color: var(--surface-500);
+    border-color: var(--surface-300);
     display: flex;
     display: inline-flex;
     display: -webkit-flex;
@@ -91,7 +91,7 @@
     /* background-color: var(---gray-100) !important; */
     border-radius: 12px;
     border-width: 1px;
-    border-color: var(--surface-500);
+    border-color: var(--surface-300);
     background-color: transparent;
     font-size: 12.5px;
 }
@@ -102,9 +102,9 @@
 }
 
 .input::placeholder {
-    color: var(---gray-500);
+    color: var(--gray-400);
     font-weight: 300;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .input:disabled {

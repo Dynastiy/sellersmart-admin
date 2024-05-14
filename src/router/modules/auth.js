@@ -9,6 +9,15 @@ import LinkSent from '@/modules/Auth/LinkSent.vue'
 
 const routes = [
   {
+    path: '/',
+    redirect: '/login',
+    meta: {
+      layout: 'Auth',
+      requiresAuth: false
+    }
+  },
+
+  {
     path: '/login',
     name: 'login',
     component: Login,

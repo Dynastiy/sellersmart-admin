@@ -3,12 +3,13 @@
     <div class="py-4 px-6 w-full lg:z-10 md:z-10">
       <div class="flex justify-between items-center">
         
+        <span class="lg:block md:block hidden">
+          <i-icon icon="grommet-icons:menu" width="28px" class="text-primary" />
+        </span>
+        
         <span role="button" class="" @click="drawer = !drawer">
           <i-icon icon="grommet-icons:menu" width="28px" class="text-primary" />
         </span>
-        <!-- <span class="brand-logo">
-          <img src="@/assets/img/logo.svg" class="w-24" alt="" />
-        </span> -->
 
       </div>
     </div>

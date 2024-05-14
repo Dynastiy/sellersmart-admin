@@ -6,7 +6,7 @@
       <app-drawer :menu="menu" />
     </div>
     <div id="main" class="lg:ml-[300px] md:ml-[300px]">
-      <app-header class="lg:block md:block hidden" :menu="menu" />
+      <app-header :menu="menu" />
       <div class="pb-28 px-5 mt-6">
         <div v-if="isSubPage" class="flex items-center gap-2 mb-4">
           <span class="back-button bg-gray-100" role="button" @click="$router.go(-1)">
@@ -59,8 +59,8 @@ export default {
           hasChildren: true,
           children: [
             { title: 'Customers', to: '/app/users/customers' },
-            { title: 'Vendors', to: '/app/users/vendor' },
-            { title: 'Logistics', to: '/app/users/logistics' },
+            { title: 'Vendors', to: '/app/users/vendors' },
+            // { title: 'Logistics', to: '/app/users/logistics' },
             { title: 'Admin', to: '/app/users/admin' }
           ]
         },
