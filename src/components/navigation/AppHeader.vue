@@ -2,21 +2,25 @@
   <div class="" id="mobile-drawer">
     <div class="py-4 px-6 w-full lg:z-10 md:z-10">
       <div class="flex justify-between items-center">
-        
         <span class="lg:block md:block hidden">
           <i-icon icon="grommet-icons:menu" width="28px" class="text-primary" />
         </span>
-        
-        <span role="button" class="" @click="drawer = !drawer">
+
+        <div class="lg:hidden md:hidden flex justify-center">
+          <router-link to="/app/dashboard"
+            ><img src="@/assets/img/logo-spread.svg" width="180" alt=""
+          /></router-link>
+        </div>
+
+        <span role="button" class="lg:hidden md:hidden block" @click="drawer = !drawer">
           <i-icon icon="grommet-icons:menu" width="28px" class="text-primary" />
         </span>
-
       </div>
     </div>
     <div class="">
       <Sidebar v-model:visible="drawer" position="right" style="width: 100%">
         <template #container="{ closeCallback }">
-          <div class="h-screen bg-black2 px-6 pb-28 flex flex-col z-20">
+          <div class="h-screen bg-primaryLight px-6 pb-28 flex flex-col z-20">
             <div>
               <span role="button" class="flex justify-end mt-4" @click="closeCallback">
                 <i-icon icon="gg:close-o" class="text-dark text-2xl" />
@@ -24,12 +28,12 @@
             </div>
             <div class="flex flex-col justify-between h-[80vh]">
               <div class="mt-4">
-                <div class="flex justify-center mt-2">
-                  <router-link to="/"
-                    ><img src="@/assets/img/logo.svg" width="120" alt=""
+                <!-- <div class="flex justify-center mt-2">
+                  <router-link to="/app/dashboard"
+                    ><img src="@/assets/img/logo-spread.svg" width="180" alt=""
                   /></router-link>
                 </div>
-                <hr class="my-6 bg-gray-200" />
+                <hr class="my-6 bg-gray-200" /> -->
 
                 <ul class="p-0 flex flex-col gap-4 mt-6">
                   <li v-for="item in menu" :key="item.id" class="w-full px-4">

@@ -5,7 +5,7 @@
   >
     <div>
       <div class="flex justify-center">
-        <router-link to="/"><img src="@/assets/img/logo.svg" width="120" alt="" /></router-link>
+        <router-link to="/app/dashboard"><img src="@/assets/img/logo-spread.svg" width="180" alt="" /></router-link>
       </div>
 
       <ul class="p-0 flex flex-col gap-3 mt-6">
