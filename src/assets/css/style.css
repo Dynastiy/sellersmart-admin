@@ -1,0 +1,273 @@
+/* BUTTONS  */
+.brand-btn {
+    border: none;
+    padding: 12px 12px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    border-radius: 8px;
+}
+
+.brand-btn-md {
+    border: none;
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 12.8px;
+    border-radius: 6px;
+}
+
+.brand-primary {
+    background-color: rgb(var(--color-primary));
+    /* background: linear-gradient(to left,rgb( var(--color-primary)), var(---secondary-color)); */
+    color: #fff;
+}
+
+.brand-outline {
+    /* background-color:rgb( var(--color-primary)); */
+    /* background: linear-gradient(to left,rgb( var(--color-primary)), var(---secondary-color)); */
+    color: var(---secondary-color);
+    border: 1px solid var(---secondary-color);
+}
+
+/* INPUT  */
+.input-field {
+    border-width: 1px;
+    border-color: var(--surface-500);
+    display: flex;
+    display: inline-flex;
+    display: -webkit-flex;
+    /* gap: 5px; */
+    font-size: 13px;
+    padding-left: 12px;
+    padding-right: 10px;
+    align-items: center;
+    /* background: var(---gray-100) !important; */
+    border-radius: 12px;
+}
+
+.input-field:focus-within {
+    border: 2px solid rgb(var(--color-primary)) !important;
+}
+
+.input-field.error {
+    border-color: var(---error) !important;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 13px 0;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.input-field input::placeholder {
+    color: var(---gray-500);
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.input-field .form-icon {
+    color: var(---gray-500);
+    font-size: 20px;
+}
+
+.input-field .form-icon {
+    color: var(--surface-500);
+}
+
+.el-select__wrapper {
+    min-height: 42px !important;
+}
+
+.select,
+.input, .el-select__wrapper {
+    width: 100%;
+    padding: 13px 10px;
+    font-weight: 500;
+    outline: none;
+    /* background-color: var(---gray-100) !important; */
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: var(--surface-500);
+    background-color: transparent;
+    font-size: 12.5px;
+}
+
+.select:focus,
+.input:focus {
+    border: 2px solid rgb(var(--color-primary));
+}
+
+.input::placeholder {
+    color: var(---gray-500);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.input:disabled {
+    background-color: var(---gray-300);
+}
+
+form label {
+    margin-bottom: 2px;
+    font-size: 12.7px;
+    font-weight: 500;
+    color: var(---gray-500);
+}
+
+/* N Progress  */
+#nprogress .bar {
+    height: 4px;
+    background:rgb( var(--color-primary));
+}
+
+#nprogress .spinner-icon {
+    border-top-color:rgb( var(--color-primary));
+    border-left-color:rgb( var(--color-primary));
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#nprogress .peg {
+    box-shadow: 0 0 10px rgb(var(--color-primary)), 0 0 5px var(---secondary-color);
+}
+
+
+/* El Step  */
+.el-step__icon {
+    background-color: rgb(var(--color-primary)); 
+    height: 20px !important;
+    width: 20px !important;
+}
+
+.el-step__icon-inner{
+    font-size: 12px;
+}
+
+.el-step__head.is-success {
+    border-color:rgb( var(--color-primary)) !important;
+    color:rgb( var(--color-primary)) !important; 
+}
+
+/* Misc  */
+.back-button {
+    border: 1px solid var(--gray-200);
+    background-color: #fff;
+    width: 45px;
+    height: 40px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+  }
+
+  /* File INPUT */
+.add-file [type="file"] {
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.add-file [type="file"]+label {
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 0;
+}
+
+.add-file {
+    border: 1px dashed var(--dark-100);
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.add-file:hover {
+    background-color: var(--gray-50);
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -o-transition: all 2s;
+    cursor: pointer;
+}
+
+.file--icons {
+    font-size: 1.3rem;
+    color: var(--gray-500);
+}
+
+
+/* Text Editor  */
+.p-editor-container .p-editor-toolbar.ql-snow, .p-editor-container .p-editor-content.ql-snow {
+    border-color: var(---gray-500) !important;
+}
+
+
+/* El Tabs  */
+.el-tabs__item:hover {
+    color:rgb( var(--color-primary)) !important;
+}
+
+.el-tabs__item.is-active {
+    color:rgb( var(--color-primary)) !important;
+}
+
+.el-tabs__active-bar {
+    background-color:rgb( var(--color-primary)) !important;
+}
+
+.other--details .el-tabs__item {
+    font-size: 22px;
+    /* margin-top: 2rem; */
+    font-weight: 700;
+    color: var(--surface-500);
+}
+
+.nav--tabs .el-tabs__item, .settings-tab .el-tabs__item {
+    font-size: 16px;
+    text-align: center;
+    /* margin-top: 2rem; */
+    font-weight: 700;
+    color: var(--surface-500);
+}
+
+/* Progress Bar  */
+.p-progressbar-determinate .p-progressbar-value, .p-progressbar {
+    height: 12px !important;
+    border-radius: 6px;
+  }
+  
+  .p-progressbar .p-progressbar-value {
+    background:rgb( var(--color-primary)) !important;
+  }
+
+  
+/* Prime vue  */
+.p-dropdown .p-dropdown-label.p-placeholder, .p-inputtext, .p-dropdown-panel .p-dropdown-items .p-dropdown-empty-message {
+    font-size: 13px;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-empty-message {
+    color: var(--error-color) !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    font-size: 13px;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    color: var(---black1);
+    background: var(---gray-300);
+}
+
+.p-inputwrapper {
+    outline: var(---gray-300);
+}
+
+.p-inputwrapper-focus, .p-focus {
+    border: 1px solid var(--gray-500) !important;
+}
